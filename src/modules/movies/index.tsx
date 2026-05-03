@@ -1,0 +1,1 @@
+export { default as Movie } from "../movies/pages/Movies";
