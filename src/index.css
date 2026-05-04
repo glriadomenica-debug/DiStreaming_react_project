@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --text: #6b6375;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  color: var(--text);
+}
 /*
 :root {
   --text: #6b6375;
@@ -112,4 +122,4 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
-/*
+*/
