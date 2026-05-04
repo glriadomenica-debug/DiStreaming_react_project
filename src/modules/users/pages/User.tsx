@@ -95,43 +95,46 @@ export default function ListProducts() {
     <>
       {/* List table users*/}
       <div className='bg-white p-4 mt-8 shadow rounded-lg'>
-        <h1 className="text-center text-2xl font-bold text-black">
-          Users Data
-        </h1>
-        <div className='text-end'>
-          <button onClick={() => setOpenModal(true)} className="flex items-center text-md bg-blue-900 hover:bg-blue-700 text-white py-1 px-4 rounded hover:cursor-pointer"><IoIosAdd />
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <h1 className="text-center text-2xl font-bold text-black">
+            Users Data
+          </h1>
+          <button onClick={() => setOpenModal(true)} className="flex items-center justify-center md:justify-end bg-blue-900 hover:bg-blue-700 text-white py-2 px-4 rounded hover:cursor-pointer"><IoIosAdd className='mr-2 text-xl' />
             Add New User</button>
         </div>
-        <table className="mt-4 w-full">
-          <thead className="border border-gray-300 text-blue-900">
-            <tr className="border border-gray-300">
-              <th className="border border-gray-300 p-2">Name</th>
-              <th className="border border-gray-300 p-2">Email</th>
-              <th className="border border-gray-300 p-2">password</th>
-              <th className="border border-gray-300 p-2">Password Confirmation</th>
-              <th className="border border-gray-300 p-2">Action</th>
 
-
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((u, index) => (
-              <tr key={index} className={`${index % 2 === 0 ? "bg-gray-200 hover:bg-gray-300" : "hover:bg-gray-300"}`}>
-                <td className="border border-gray-300 p-2">{u.name}</td>
-                <td className="border border-gray-300 p-2">{u.email}</td>
-                <td className="border border-gray-300 p-2">{u.password}</td>
-                <td className="border border-gray-300 p-2">{u.password_confirmation}</td>
-                <td className="border border-gray-300 p-2 flex gap-4">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded hover:cursor-pointer" onClick={() => navigate(`/users/edit/${u.id}`)}>
-                    <AiFillEdit />
-                  </button>
-                  <button className="bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded hover:cursor-pointer" onClick={() => handleModalDelete(u.id)}> <AiFillDelete />
-                  </button>
-                </td>
+        <div className="mt-4 w-full overflow-x-auto">
+          <table className="w-full min-w-[600px] border border-gray-300">
+            <thead className="bg-gray-100 text-blue-900">
+              <tr>
+                <th className="border p-2">Name</th>
+                <th className="border p-2">Email</th>
+                <th className="border p-2">password</th>
+                <th className="border p-2">Password Confirmation</th>
+                <th className="border p-2 text-center">Action</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {users.map((u, index) => (
+                <tr key={index} className={`${index % 2 === 0 ? "bg-gray-50" : "hover:bg-gray-200"}`}>
+                  <td className="border p-2 text-sm md:text-base">{u.name}</td>
+                  <td className="border p-2 text-sm md:text-base">{u.email}</td>
+                  <td className="border p-2 text-sm md:text-base">{u.password}</td>
+                  <td className="border p-2 text-sm md:text-base">{u.password_confirmation}</td>
+                  <td className="border p-2">
+                    <div className="flex gap-2 justify-center">
+                      <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded hover:cursor-pointer" onClick={() => navigate(`/users/edit/${u.id}`)}>
+                        <AiFillEdit />
+                      </button>
+                      <button className="bg-red-500 hover:bg-red-700 text-white p-2 rounded hover:cursor-pointer" onClick={() => handleModalDelete(u.id)}> <AiFillDelete />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <Modal
