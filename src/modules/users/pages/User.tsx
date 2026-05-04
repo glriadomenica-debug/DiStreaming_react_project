@@ -95,7 +95,9 @@ export default function ListProducts() {
     <>
       {/* List table users*/}
       <div className='bg-white p-4 mt-8 shadow rounded-lg'>
-        <h1 className=''>Users data</h1>
+        <h1 className="text-center text-2xl font-bold text-blue-900">
+          Users Data
+        </h1>
         <div className='text-end'>
           <button onClick={() => setOpenModal(true)} className="flex items-center text-md bg-blue-900 hover:bg-blue-700 text-white py-1 px-4 rounded hover:cursor-pointer"><IoIosAdd />
             Add New User</button>
