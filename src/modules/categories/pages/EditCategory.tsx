@@ -68,18 +68,17 @@ export default function EditCategory() {
   };
 
   return (
-
     <>
       <div className='bg-white rounded-xl px-4 py-4 opacity-80'>
-        <div className='flex items-center text-xl '><AiFillEdit />
+        <div className='flex items-center text-xl text-blue-900 font-bold'><AiFillEdit />
           Edit Category</div>
 
         <div className="py-4 text-1xl">
-          <label htmlFor="name">Category Name</label>
+          <label htmlFor="name" className='text-black'>Category Name</label>
           <input type="text" name="name" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formCategory.name} />
 
-          <label htmlFor="description">Category Description</label>
+          <label htmlFor="description" className='text-black'>Category Description</label>
           <input type="text" name="description" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formCategory.description} />
         </div>
