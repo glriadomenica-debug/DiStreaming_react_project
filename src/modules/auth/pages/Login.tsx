@@ -51,22 +51,22 @@ export default function App() {
         {/* left */}
         <div className="" >
           <div className='bg-gray-300 shadow lg:mx-32 mx-4 p-8 rounded-xl'>
-            <h1 className='flex text-4xl text-left mb-4'>
+            <h1 className='flex text-4xl text-left mb-4 text-blue-900 font-bold'>
               Log in</h1>
             <p className='text-gray-400'>Please enter your email and password</p>
 
-            <div className='text-white flex flex-col gap-4'>
+            <div className='text-black flex flex-col gap-4'>
               <label htmlFor="email">Email</label>
               <input type="email" name="email" onChange={handleChange} className='border border-gray-400 p-2 w-full rounded-xl' />
             </div>
 
-            <div className='text-white flex flex-col gap-4 mt-2'>
+            <div className='text-black flex flex-col gap-4 mt-2'>
               <label htmlFor="password">Password</label>
               <input type="password" name="password" onChange={handleChange} className='border border-gray-400 p-2 w-full rounded-xl' />
             </div>
 
-            <p className='text-gray-500 text-xs mt-4'>Don't have an account?</p>
-            <span className="text-blue-800 cursor-pointer" onClick={() => navigate("/register")}>Register</span>
+            {/* <p className='text-gray-500 text-xs mt-4'>Don't have an account?</p>
+            <span className="text-blue-800 cursor-pointer" onClick={() => navigate("/register")}>Register</span> */}
 
             <button className="bg-blue-900 text-white p-2 w-full rounded-xl mt-4 cursor-pointer" onClick={handleSubmit} disabled={loading}>Log in</button>
           </div>
