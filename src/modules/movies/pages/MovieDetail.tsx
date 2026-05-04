@@ -61,17 +61,17 @@ export default function MovieDetail() {
 
       </div>
       <div className='bg-white p-6 rounded-lg shadow mt-4'>
-        <h1 className="text-3xl font-bold">{movie.title}</h1>
+        <h1 className="text-3xl font-bold text-yellow-800">{movie.title}</h1>
         <p className='text-black mt-2'>{movie.category?.name || "No Category"}</p>
 
         <p className='text-black mt-2'>{movie.release_year} • ⭐ {movie.rating}</p>
-        <h4 className='text-gray-400 mt-4'>{movie.description}</h4>
+        <h4 className='text-gray-500 mt-4'>{movie.description}</h4>
       </div>
 
       {/* TRAILER */}
       {movie.video_url && (
         <div id="trailer" className='mt-6 bg-white p-4 rounded shadow'>
-          <h2 className="text-xl font-semibold mb-2">Trailer</h2>
+          <h2 className="text-xl font-semibold mb-2 text-red-900">Trailer</h2>
 
           <iframe
             width="100%"
