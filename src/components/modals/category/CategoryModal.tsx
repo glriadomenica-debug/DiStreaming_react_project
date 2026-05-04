@@ -27,14 +27,14 @@ export default function Modal({
         className="relative bg-white p-6 rounded-lg w-96 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-lg font-bold mb-4">
+        <h2 className="text-lg font-bold mb-4 text-blue-900">
           {title}
         </h2>
-        <label htmlFor="name">Category Name</label>
+        <label htmlFor="name" className="text-blue-800">Category Name</label>
         <input type="text" name="name" placeholder="Category Name" onChange={handleChange} className="w-full border p-2 rounded mb-4"
         />
 
-        <label htmlFor="description">Description</label>
+        <label htmlFor="description" className="text-blue-800">Description</label>
         <input type="text" name="description" placeholder="Category description" onChange={handleChange} className="w-full border p-2 rounded mb-4"
         />
 
