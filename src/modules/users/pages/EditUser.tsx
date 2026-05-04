@@ -72,26 +72,25 @@ export default function EditUser() {
   };
 
   return (
-
     <>
       <div className='bg-white rounded-xl px-4 py-4 opacity-80'>
-        <div className='flex items-center text-xl '><AiFillEdit />
+        <div className='flex items-center text-xl text-blue-900 font-bold '><AiFillEdit />
           Edit User</div>
 
         <div className="py-4 text-1xl">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className='text-blue-900'>Name</label>
           <input type="text" name="name" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formUser.name} />
 
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className='text-blue-900'>Email</label>
           <input type="email" name="email" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formUser.email} />
 
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" className='text-blue-900'>Password</label>
           <input type="password" name="password" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formUser.password} />
 
-          <label htmlFor="password_confirmation">Password Confirm</label>
+          <label htmlFor="password_confirmation" className='text-blue-900'>Password Confirm</label>
           <input type="password" name="password_confirmation" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formUser.password_confirmation} />
 
