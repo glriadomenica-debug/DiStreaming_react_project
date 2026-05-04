@@ -100,7 +100,7 @@ export default function ListCategories() {
       <div className="bg-white/80 p-6 rounded-lg shadow">
         {/* HEADER */}
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-xl font-bold">List Categories</h1>
+          <h1 className="text-xl font-bold text-black">Categories</h1>
 
           <button
             onClick={() => {
@@ -119,7 +119,7 @@ export default function ListCategories() {
             <div
               key={cat.id}
               className="bg-white p-4 rounded shadow items-center">
-              <h3 className='font-semibold'>{cat.name}</h3>
+              <h3 className='font-semibold text-blue-500'>{cat.name}</h3>
               <p className='text-sm text-gray-500'>{cat.description}</p>
 
               {/* 🔥 tampilkan usage */}
