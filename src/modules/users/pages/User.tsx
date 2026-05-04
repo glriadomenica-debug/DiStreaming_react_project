@@ -95,7 +95,7 @@ export default function ListProducts() {
     <>
       {/* List table users*/}
       <div className='bg-white p-4 mt-8 shadow rounded-lg'>
-        <h1 className="text-center text-2xl font-bold text-blue-900">
+        <h1 className="text-center text-2xl font-bold text-black">
           Users Data
         </h1>
         <div className='text-end'>
@@ -103,7 +103,7 @@ export default function ListProducts() {
             Add New User</button>
         </div>
         <table className="mt-4 w-full">
-          <thead className="border border-gray-300">
+          <thead className="border border-gray-300 text-blue-900">
             <tr className="border border-gray-300">
               <th className="border border-gray-300 p-2">Name</th>
               <th className="border border-gray-300 p-2">Email</th>
