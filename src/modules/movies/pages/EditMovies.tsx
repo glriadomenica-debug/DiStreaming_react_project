@@ -78,7 +78,6 @@ export default function EditMovies() {
   };
 
   return (
-
     <>
       <div className='bg-white rounded-xl px-4 py-4 opacity-80'>
         <div className='flex items-center text-xl '><AiFillEdit />
