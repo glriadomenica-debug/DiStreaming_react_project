@@ -29,7 +29,7 @@ export default function Modal({
 
         {/* Modal Content */}
         <div
-          className="relative bg-white p-6 rounded-lg shadow-lg w-1/2 max-w-lg max-h-[90vh] overflow-y-auto"
+          className="text-blue-900 relative bg-white p-6 rounded-lg shadow-lg w-1/2 max-w-lg max-h-[90vh] overflow-y-auto"
           onClick={(e) => e.stopPropagation()}
         >
           <h3 className="font-bold text-lg">{title}</h3>
