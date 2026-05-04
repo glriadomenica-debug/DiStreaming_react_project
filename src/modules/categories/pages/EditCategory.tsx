@@ -74,11 +74,11 @@ export default function EditCategory() {
           Edit Category</div>
 
         <div className="py-4 text-1xl">
-          <label htmlFor="name" className='text-black'>Category Name</label>
+          <label htmlFor="name" className='text-blue-900'>Category Name</label>
           <input type="text" name="name" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formCategory.name} />
 
-          <label htmlFor="description" className='text-black'>Category Description</label>
+          <label htmlFor="description" className='text-blue-900'>Category Description</label>
           <input type="text" name="description" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formCategory.description} />
         </div>
