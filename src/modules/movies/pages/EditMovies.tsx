@@ -80,48 +80,48 @@ export default function EditMovies() {
   return (
     <>
       <div className='bg-white rounded-xl px-4 py-4 opacity-80'>
-        <div className='flex items-center text-xl '><AiFillEdit />
+        <div className='flex items-center text-xl text-blue-900 font-bold'><AiFillEdit />
           Edit Movie</div>
 
         <div className="py-4 text-1xl">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title" className="text-blue-800">Title</label>
           <input type="text" name="title" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.title} />
         </div>
 
         <div className="py-4 text-1xl">
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description" className="text-blue-800">Description</label>
           <input type="text" name="description" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.description} />
         </div>
 
         <div className="py-4">
-          <label htmlFor="rating">Rating</label>
+          <label htmlFor="rating" className="text-blue-800">Rating</label>
           <input type="number" name="rating" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.rating} />
         </div>
 
         <div className="py-4">
-          <label htmlFor="release_year">Release year</label>
+          <label htmlFor="release_year" className="text-blue-800">Release year</label>
           <input type="number" name="release_year" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.release_year} />
         </div>
 
         <div className="py-4">
-          <label htmlFor="thumbnail">Thumbnail</label>
+          <label htmlFor="thumbnail" className="text-blue-800">Thumbnail</label>
           <input type="text" name="thumbnail" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.thumbnail} />
         </div>
 
 
         <div className="py-4">
-          <label htmlFor="video_url">Video URL</label>
+          <label htmlFor="video_url" className="text-blue-800">Video URL</label>
           <input type="text" name="video_url" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.video_url} />
         </div>
 
         <div className="py-4">
-          <label htmlFor="category_id">Category ID</label>
+          <label htmlFor="category_id" className="text-blue-800">Category ID</label>
           <input type="number" name="category_id" className="w-full border border-gray-400 my-2 p-2 rounded"
             onChange={handleChange} defaultValue={formMovie.category_id} />
         </div>
