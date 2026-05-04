@@ -69,7 +69,6 @@ export default function PulicMovies() {
     fetchCategory();
   }, []);
 
-
   // FILTER CATEGORY
   const handleCategoryClick = (id: number) => {
     setSelectedCategory(id);
@@ -79,13 +78,13 @@ export default function PulicMovies() {
   return (
     <>
       <div className="bg-white/80 p-6 rounded-lg shadow">
-        <div className="flex justify-between items-center">
+        {/* <div className="flex justify-between items-center">
           <h1 className="text-1xl font-bold">Movies</h1>
-        </div>
+        </div> */}
 
         {/* content genre movies */}
         <div className="bg-black text-white p-6 rounded-lg">
-          <h2 className="text-2xl font-bold mb-6">Genres</h2>
+          <h2 className="text-2xl font-bold mb-6">Movies : Genre</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Categories.map((cat) => (
               <div
