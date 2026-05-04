@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { AiOutlineRight } from "react-icons/ai";
+
 
 interface Category {
   id: number;
@@ -90,11 +92,11 @@ export default function PulicMovies() {
               <div
                 key={cat.id}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`cursor-pointer p-4 rounded ${selectedCategory === cat.id
+                className={`cursor-pointer p-4 rounded flex items-center justify-between ${selectedCategory === cat.id
                   ? "bg-blue-600"
-                  : "bg-gray-800 hover:bg-gray-700"
+                  : "bg-gray-800 hover:bg-blue-700"
                   }`}
-              > {cat.name}
+              > {cat.name} <AiOutlineRight />
               </div>
             ))}
           </div>
@@ -105,7 +107,7 @@ export default function PulicMovies() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Array.isArray(Movies) && Movies.map((m) => (
               <div key={m.id} className="bg-white rounded shadow p-3">
-                <h3 className="font-semibold mt-2 underline cursor-pointer hover:text-blue-900" onClick={() => navigate(`/details/${m.id}`)}>{m.title}</h3>
+                <h3 className="text-blue-600 font-semibold mt-2 underline cursor-pointer hover:text-blue-900" onClick={() => navigate(`/details/${m.id}`)}>{m.title}</h3>
                 <p className="text-sm text-gray-500">
                   {m.release_year} • ⭐ {m.rating}
                 </p>
