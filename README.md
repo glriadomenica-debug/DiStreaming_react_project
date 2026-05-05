@@ -115,7 +115,7 @@ Admin Side:
 
 ## 🔗 Backend Repository
 
-React frontend:
+Laravel backend:
 👉 [https://github.com/glriadomenica-debug/DiStreaming_react_project](https://github.com/glriadomenica-debug/DiStreaming_laravel_project)
 
 ---
