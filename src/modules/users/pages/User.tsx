@@ -15,9 +15,9 @@ interface User {
   password_confirmation: string;
 }
 export default function ListProducts() {
-  const [perPage, setPerPage] = useState<number>(5);
-  const [pager, setPager] = useState<number>(1);
-  const [maxPage, setMaxPage] = useState<number>(1);
+  const [_perPage, _setPerPage] = useState<number>(5);
+  const [_pager, _setPager] = useState<number>(1);
+  const [_maxPage, _setMaxPage] = useState<number>(1);
   const [formUser, setFormUser] = useState<any>({});
   const [users, setUsers] = useState<User[]>([]);
   const [openModal, setOpenModal] = useState<boolean>(false); //Trigger untuk menekkan button add
